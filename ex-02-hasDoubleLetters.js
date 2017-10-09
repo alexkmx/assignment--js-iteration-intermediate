@@ -17,10 +17,37 @@
  *      => false // the double-letters have to be next to eachother
 **/
 
+function hasDoubleLetters(takeString){
+
+var container = []
+
+for (var i = 0; i < takeString.length;i++) {
+console.log(takeString[i]);
+
+//   container.push(takeString[i])
+// for (var j = 0; j < container.length;j++ ){
+// console.log(takeString[i].indexOf());
+
+// if(container[i].indexOf() ){
+// // console.log(true);
+// }
+// console.log(false);
+}
+
+}
+
+
+
+
+
+
+
+
+
 console.group('JS Iterations Week');
   console.log('Function: hasDoubleLetters', 'background-color: green; color: white')
   console.groupCollapsed('Should return true for "shutter"');
-    console.assert(hasDoubleLetters('stutter') === true)
+    console.assert(hasDoubleLetters('shutter') === true)
   console.groupEnd();
 
   console.groupCollapsed('Should return false for "prospect"');

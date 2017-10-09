@@ -5,6 +5,22 @@
  * i.e. findLongestWord("a book full of dogs") should return "book"
  *
 **/
+function findLongestWord(getString) {
+
+  var words = getString.split(" ")
+  var longestWord = ''
+
+  for(var i = 0; i < words.length; i++){
+    var cleanWord = words[i].replace("'",'')
+    if(cleanWord.length > longestWord.length) {
+      longestWord = cleanWord
+    }
+  }
+return longestWord
+}
+
+
+
 
 console.group('JS Iterations Week');
   console.log('%cFunction: findLongestWord', 'background-color: green; color: white')

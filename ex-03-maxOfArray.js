@@ -6,6 +6,18 @@
  *
 **/
 
+function maxOfArray(takeNumbers) {
+  
+  var numberHig = 0
+
+  for (var i = 0; i < takeNumbers.length; i++) {
+   if (takeNumbers[i] > numberHig) {
+  numberHig = takeNumbers[i]
+   }
+  }
+  return numberHig
+}
+
 
 console.group('JS Iterations Week');
   console.log('%cFunction: maxOfArray', 'background-color: green; color: white')

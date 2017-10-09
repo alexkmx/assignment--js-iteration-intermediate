@@ -6,6 +6,30 @@
  *
 */
 
+function sumPositives(arrayNumbers) {
+
+var almacenaNumerosPositivos = []
+
+for(var i = 0; i < arrayNumbers.length;i++) {
+  if(arrayNumbers[i] >= 0 ){
+almacenaNumerosPositivos.push(arrayNumbers[i])
+var sumPos = 0
+for(var j = 0; j < almacenaNumerosPositivos.length; j++){
+sumPos += almacenaNumerosPositivos[j];
+}
+}
+}
+// console.log(sumPos);
+return sumPos;
+}
+
+
+
+
+
+
+
+
 console.group('JS Iterations Week');
   console.log('%cFunction: sumPositives', 'background-color: green; color: white')
   console.groupCollapsed('Should return 12 in the next [3, -1, 4, 5, -3, -4] series');
